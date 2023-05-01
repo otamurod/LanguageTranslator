@@ -64,9 +64,11 @@ fun VoiceTranslationScreen() {
     }
 
     val speechRecognizerLauncher =
-        rememberLauncherForActivityResult(contract = SpeechRecognizerContract(), onResult = {
-            translation.value = it.toString()
-        })
+        rememberLauncherForActivityResult(
+            contract = SpeechRecognizerContract(),
+            onResult = {
+                translation.value = it.toString()
+            })
 
     Column(
         modifier = Modifier

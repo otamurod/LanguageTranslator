@@ -29,13 +29,13 @@ fun SplashScreen(navController: NavController) {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color(0xFF311B92)),
+            .background(Color.White),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         // Add animated logo here
         Image(
-            painterResource(id = R.drawable.app_logo),
+            painterResource(id = R.drawable.splash_screen_logo),
             contentDescription = "Text Translation",
             modifier = Modifier
                 .height(240.dp)
@@ -48,7 +48,7 @@ fun SplashScreen(navController: NavController) {
         Text(
             "Language Translator",
             modifier = Modifier.scale(scale.value),
-            color = Color.White,
+            color = Color(0xFF311B92),
             fontSize = 40.sp,
             fontFamily = FontFamily.Cursive
         )

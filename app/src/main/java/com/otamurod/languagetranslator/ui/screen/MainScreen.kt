@@ -95,14 +95,14 @@ fun MainScreen() {
                 })
                 BottomNavigationItem(icon = {
                     Image(
-                        painterResource(id = com.otamurod.languagetranslator.R.drawable.ic_write),
-                        contentDescription = "Handwriting Translation",
+                        painterResource(id = com.otamurod.languagetranslator.R.drawable.ic_image),
+                        contentDescription = "Image Scanner",
                         modifier = Modifier.padding(6.dp)
                     )
                 },
                     label = {
                         Text(
-                            "Write",
+                            "Scan",
                             color = Color.Black,
                             fontSize = 14.sp,
                             fontFamily = FontFamily.Default,
@@ -124,7 +124,7 @@ fun MainScreen() {
                 VoiceTranslationScreen()
             }
             composable("handwritingTranslation") {
-                HandwritingTranslationScreen()
+                TextRecognitionScreen()
             }
         }
     }

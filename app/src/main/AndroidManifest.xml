@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -27,8 +28,8 @@
             </intent-filter>
 
             <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
+                android:name="com.google.mlkit.vision.DEPENDENCIES"
+                android:value="ocr" />
         </activity>
     </application>
 
