@@ -112,7 +112,7 @@ fun MainScreen() {
                     selected = false,
                     onClick = {
                         navController.popBackStack()
-                        navController.navigate("imageScanner")
+                        navController.navigate("textRecognition")
                     })
             }
         }) {
@@ -123,7 +123,7 @@ fun MainScreen() {
             composable("voiceTranslation") {
                 VoiceTranslationScreen()
             }
-            composable("imageScanner") {
+            composable("textRecognition") {
                 TextRecognitionScreen()
             }
         }
